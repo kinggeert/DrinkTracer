@@ -4,12 +4,28 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:DrinkTracer"
+    xmlns:viewPages="clr-namespace:DrinkTracer.ViewPages"
     Shell.FlyoutBehavior="Flyout"
     Title="DrinkTracer">
 
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    
+    <ShellContent
+        Title="Drinks"
+        ContentTemplate="{DataTemplate viewPages:DrinksPage}"
+        Route="MainPage" />
+    
+    <ShellContent
+        Title="Bills"
+        ContentTemplate="{DataTemplate viewPages:BillsPage}"
+        Route="MainPage" />
+    
+    <ShellContent
+        Title="Groceries"
+        ContentTemplate="{DataTemplate viewPages:GroceriesPage}"
         Route="MainPage" />
 
 </Shell>
