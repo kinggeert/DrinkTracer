@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:DrinkTracer"
+            xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
+            xmlns:DrinkTracer="clr-namespace:DrinkTracer"
+            xmlns:viewPages="clr-namespace:DrinkTracer.ViewPages"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            x:Class="DrinkTracer.AppTabbedPage">
+    
+    <NavigationPage Title="Drinks" IconImageSource="dotnet_bot.png">
+        <x:Arguments>
+            <viewPages:DrinksPage />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Bills" IconImageSource="dotnet_bot.png">
+        <x:Arguments>
+            <viewPages:BillsPage />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Groceries" IconImageSource="dotnet_bot.png">
+        <x:Arguments>
+            <viewPages:GroceriesPage />
+        </x:Arguments>
+    </NavigationPage>
+    
+</TabbedPage>
