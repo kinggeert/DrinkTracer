@@ -9,17 +9,17 @@
             android:TabbedPage.ToolbarPlacement="Bottom"
             x:Class="DrinkTracer.AppTabbedPage">
     
-    <NavigationPage Title="Drinks" IconImageSource="dotnet_bot.png">
+    <NavigationPage Title="Drinks" IconImageSource="beer.svg">
         <x:Arguments>
             <viewPages:DrinksPage />
         </x:Arguments>
     </NavigationPage>
-    <NavigationPage Title="Bills" IconImageSource="dotnet_bot.png">
+    <NavigationPage Title="Bills" IconImageSource="bills.svg">
         <x:Arguments>
             <viewPages:BillsPage />
         </x:Arguments>
     </NavigationPage>
-    <NavigationPage Title="Groceries" IconImageSource="dotnet_bot.png">
+    <NavigationPage Title="Groceries" IconImageSource="shopping.svg">
         <x:Arguments>
             <viewPages:GroceriesPage />
         </x:Arguments>
