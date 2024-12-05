@@ -1,0 +1,53 @@
+@startuml
+hide circle
+hide empty members
+skinparam classAttributeIconSize 0
+skinparam packageStyle rectangle
+title Class-diagram DrinkTracer
+
+class Product {
+    + uint Identifier
+    + string Name
+    + Double Price
+    + uint Stock
+}
+
+class Bill {
+    + uint Identifier
+    + List<ProductCount> Products
+    + DateOnly Date
+    + User User
+    + bool IsPayed
+    + GetTotalPrice()
+}
+
+class GroceryList {
+    + uint Identifier
+    + List<ProductCount> Groceries
+    + DateOnly Date
+    + User ApplicableUser
+    + GetTotalPrice()
+}
+
+class ProductCount {
+    + uint Identifier
+    + Product Product
+    + uint Count
+    + GetTotalPrice()
+}
+
+class User {
+    uint Identifier
+    string UserName
+    string PasswordHash
+    string EMail
+    List<Bill> Bills
+}
+
+User "1" -- "0:n" Bill
+Bill "0:1" -- "0:n" ProductCount
+GroceryList "0:1" -- "0:n" ProductCount
+ProductCount "0:n" -- "1" Product
+User "1" -- "0:n" GroceryList
+
+@enduml
