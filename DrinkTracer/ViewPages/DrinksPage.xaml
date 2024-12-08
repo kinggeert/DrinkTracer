@@ -6,12 +6,27 @@
     <Grid>
         <!-- Main Content -->
         <ScrollView>
-            <StackLayout>
-                <Label Text="Hello, .NET MAUI!" 
-                       FontSize="24" 
-                       HorizontalOptions="Center" 
-                       VerticalOptions="CenterAndExpand" />
-                <!-- Add more content here -->
+            <StackLayout Orientation="Horizontal" Padding="10">
+                <Border
+                    BackgroundColor="{StaticResource Primary}"
+                    Padding="24"
+                    StrokeShape="RoundRectangle, 20, 20, 20, 20"
+                    HorizontalOptions="FillAndExpand"
+                    HeightRequest="70">
+                    <Grid>
+                        <Label Text="Lorum Ipsum"
+                               TextColor="{StaticResource White}"
+                               VerticalOptions="Center" />
+                        <ImageButton 
+                            Source="add.svg"
+                            WidthRequest="50"
+                            HeightRequest="50"
+                            CornerRadius="10"
+                            BackgroundColor="{StaticResource Secondary}"
+                            HorizontalOptions="End"
+                            VerticalOptions="Center"/>
+                    </Grid>
+                </Border>
             </StackLayout>
         </ScrollView>
         
