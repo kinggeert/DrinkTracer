@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DrinkTracer.ViewPages;
 
-public partial class BillsPage : ContentPage
+public partial class HistoryPage : ContentPage
 {
-    public BillsPage()
+    public HistoryPage()
     {
         InitializeComponent();
     }

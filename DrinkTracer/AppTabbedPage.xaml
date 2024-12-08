@@ -12,9 +12,9 @@
             <viewPages:DrinksPage />
         </x:Arguments>
     </NavigationPage>
-    <NavigationPage Title="Bills" IconImageSource="bills.svg">
+    <NavigationPage Title="History" IconImageSource="history.svg">
         <x:Arguments>
-            <viewPages:BillsPage />
+            <viewPages:HistoryPage />
         </x:Arguments>
     </NavigationPage>
     <NavigationPage Title="Groceries" IconImageSource="shopping.svg">

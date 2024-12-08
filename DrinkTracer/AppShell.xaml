@@ -20,7 +20,7 @@
     
     <ShellContent
         Title="Bills"
-        ContentTemplate="{DataTemplate viewPages:BillsPage}"
+        ContentTemplate="{DataTemplate viewPages:HistoryPage}"
         Route="MainPage" />
     
     <ShellContent
