@@ -12,4 +12,9 @@ public partial class DrinksPage : ContentPage
     {
         InitializeComponent();
     }
+
+    private void BarcodeButton_OnClicked(object? sender, EventArgs e)
+    {
+        DisplayAlert("Not implemented yet", "Barcode not implemented yet", "OK");
+    }
 }
